@@ -1,7 +1,7 @@
 .navbar-container {
     width: 100%;
     height: 95px;
-    background-color: black;
+    background-color: gray;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -37,4 +37,23 @@ button {
     border: 2px solid dark;
     height: 2.3rem;
     width: 5rem;
+}
+
+.CartWidget{
+    display: flex;
+    flex-direction: row;
+    width: rem;
+}
+
+.pCartWidget{
+    margin: auto;
+    font-size: 40px;
+    font-weight:bolder;
+}
+
+.svg-inline--fa {
+    height: 2.3rem;
+    margin: auto;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
 }
