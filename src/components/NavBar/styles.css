@@ -29,16 +29,6 @@ a {
     color: white;
 }
 
-button {
-    margin-right: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    border-radius: 25%;
-    border: 2px solid dark;
-    height: 2.3rem;
-    width: 5rem;
-}
-
 .CartWidget{
     display: flex;
     flex-direction: row;

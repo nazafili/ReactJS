@@ -1,8 +1,37 @@
 import { useEffect, useState } from 'react';
+import './styles.css';
 
-const Counter = ({ contador }) => {
+const Counter = ({ stock }) => {
 
-    useEffect(() => {
+    const [contador, setContador] = useState(0);
+    const suma = () => {
+        if (contador < stock)
+            setContador(contador + 1);
+    }
+    const resta = () => {
+        if (contador > 0)
+            setContador(contador - 1);
+    }
+
+    return (
+        <>
+            <div className='divCounter'>
+                <div className='divBotones'>
+                    <button className='botonesCounter' type='button' onClick={suma}>+</button>
+                    <h2>{contador}</h2>
+                    <button className='botonesCounter' type='button' onClick={resta}>-</button>
+                </div>
+                <div className='divBoton'>
+                    <button className='botonCounter' type='button'>Agregar al carrito</button>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Counter;
+
+/*    useEffect(() => {
         console.log('Esto lo hago cuando se monte al DOM');
         return () => {
             console.log('me muestro cuando el componente se desmonta')
@@ -14,15 +43,4 @@ const Counter = ({ contador }) => {
     }, [contador])
 
     console.log('Me muestro antes de arrancar el DOM')
-
-    
-
-    return (
-        <>
-            Productos en carrito: {contador}
-        </>
-    )
-}
-
-export default Counter;
-
+*/
