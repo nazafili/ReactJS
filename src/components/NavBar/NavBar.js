@@ -1,10 +1,6 @@
-import logo from '../../logo.svg';
 import './styles.css';
 import logogabriela from './logogabriela.jpg';
 import CartWidget from '../CartWidget/CartWidget'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faCartShopping } from '@fortawesome/free-solid-svg-icons'
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
 
 
 const NavBar = () => {
@@ -28,7 +24,6 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className='CartWidget'>
-                    <ItemListContainer titulo={'Cart'}/>
                     <CartWidget />
                 </div>
             </div>

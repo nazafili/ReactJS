@@ -1,17 +1,22 @@
 import { useEffect, useState } from 'react';
 import './styles.css';
 
-const Counter = ({ stock }) => {
+const Counter = ({ stock}) => {
 
-    const [contador, setContador] = useState(0);
+    const [contador, setContador] = useState(1);
     const suma = () => {
         if (contador < stock)
             setContador(contador + 1);
     }
     const resta = () => {
-        if (contador > 0)
+        if (contador > 1)
             setContador(contador - 1);
     }
+
+
+useEffect(() => {
+    console.log('Total: ' + contador);
+}, [contador]);
 
     return (
         <>
