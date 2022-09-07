@@ -13,6 +13,9 @@ const Counter = ({ stock}) => {
             setContador(contador - 1);
     }
 
+const onAdd  = () => {
+    console.log('Agregaste: ' + contador + ' tortas a tu carrito')
+}
 
 useEffect(() => {
     console.log('Total: ' + contador);
@@ -27,7 +30,7 @@ useEffect(() => {
                     <button className='botonesCounter' type='button' onClick={resta}>-</button>
                 </div>
                 <div className='divBoton'>
-                    <button className='botonCounter' type='button'>Agregar al carrito</button>
+                    <button className='botonCounter' type='button' onClick={onAdd}>Agregar al carrito</button>
                 </div>
             </div>
         </>
