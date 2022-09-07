@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './styles.css';
 
-const Counter = ({ stock}) => {
+const Counter = ({stock}) => {
 
     const [contador, setContador] = useState(1);
     const suma = () => {
@@ -13,13 +13,9 @@ const Counter = ({ stock}) => {
             setContador(contador - 1);
     }
 
-const onAdd  = () => {
+const onAdd  = (counter) => {
     console.log('Agregaste: ' + contador + ' tortas a tu carrito')
 }
-
-useEffect(() => {
-    console.log('Total: ' + contador);
-}, [contador]);
 
     return (
         <>
@@ -30,7 +26,7 @@ useEffect(() => {
                     <button className='botonesCounter' type='button' onClick={resta}>-</button>
                 </div>
                 <div className='divBoton'>
-                    <button className='botonCounter' type='button' onClick={onAdd}>Agregar al carrito</button>
+                    <button className='botonCounter' type='button' onClick={() => { onAdd(Counter) } }>Agregar al carrito</button>
                 </div>
             </div>
         </>
