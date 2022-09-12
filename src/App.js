@@ -1,10 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import Counter from './components/Counter/Counter'
-import Form from './components/Form/Form';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import { useEffect, useState } from 'react';
-import Titulos from './components/Titulos';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   return (
@@ -12,6 +9,7 @@ function App() {
       <NavBar />
       <header className="App-header">
         <ItemListContainer greeting="Bienvenidos!"/>
+        <ItemDetailContainer/>
       </header>
     </div>
   );

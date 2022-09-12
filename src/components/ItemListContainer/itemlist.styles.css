@@ -11,7 +11,8 @@
     border: 2px solid white;
     justify-content: center;
     margin: 0.2rem 0.2rem;
-    background-color: rgb(250, 171, 171)
+    background-color: rgb(250, 171, 171);
+    width: 40rem;
 }
 
 .itemdata{
