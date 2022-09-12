@@ -1,6 +1,5 @@
 import '../ItemListContainer/itemlist.styles.css'
 import Counter from "../Counter/Counter";
-import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 import { Link } from 'react-router-dom';
 
 const Item = ({ id, name, price, image, stock }) => {
@@ -18,7 +17,7 @@ const Item = ({ id, name, price, image, stock }) => {
       <p className='itemdata'>Precio: ${price}</p>
       <p className='itemdata'>Cantidad disponible: {stock}</p>
       <Link to={`/item/${id}`}>
-        <button>ver detalle</button>
+        <button className='btn-detalle'>ver detalle</button>
       </Link>
       <Counter stock={5} onAdd={onAdd} />
     </div>

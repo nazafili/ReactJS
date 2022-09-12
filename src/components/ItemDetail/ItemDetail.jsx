@@ -8,12 +8,12 @@ const onAdd  = (contador) => {
 const ItemDetail = ({ data }) => {
 
   return (
-    <div className='itemcard'>
+    <div className='itemcarddetail'>
       
-      <img className='itemimage' src={data.image}alt=''  />
-      <p className='itemdata'>{data.title}</p>
-      <p className='itemdata'>${data.price}</p>
-      <p className='itemdata'>{data.description}</p>
+      <img className='itemimagedetail' src={data.image}alt=''  />
+      <p className='itemdatadetail'>{data.title}</p>
+      <p className='itemdatadetail'>${data.price}</p>
+      <p className='itemdatadetail'>{data.description}</p>
       <Counter stock={5} onAdd={onAdd}/>
     </div>
   );

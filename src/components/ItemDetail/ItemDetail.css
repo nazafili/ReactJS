@@ -1,0 +1,46 @@
+.itemlistdetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    margin: 0.5rem;
+}
+
+.itemcarddetail {
+    border: 2px solid white;
+    justify-content: center;
+    margin: 2rem auto;
+    background-color: rgb(250, 171, 171);
+    width: 40rem;
+}
+
+.itemdatadetail {
+    font-size: 1.5rem;
+}
+
+.itemimagedetail {
+    padding: 2rem 0 0 0;
+    width: 30rem;
+    height: 18rem;
+}
+
+.btn-detalle {
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #9daef5;
+    -webkit-box-shadow: 6px 5px 24px #666666;
+    -moz-box-shadow: 6px 5px 24px #666666;
+    box-shadow: 6px 5px 24px #666666;
+    font-family: Arial;
+    color: #fafafa;
+    font-size: 17px;
+    padding: 5px;
+    text-decoration: none;
+}
