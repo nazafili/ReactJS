@@ -3,6 +3,8 @@ import '../ItemListContainer/itemlist.styles.css'
 
 const Itemlist = ({ itemsList }) => {
 
+    // Aca creamos un map (el cual busca cada producto) y devuelve el div de ITEM
+
     return (
         <div className="itemlist">
             {itemsList.map((producto) => {
