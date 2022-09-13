@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './styles.css';
+import {Link} from 'react-router-dom';
 
 const Counter = ({stock , onAdd}) => {
 
@@ -21,9 +22,11 @@ const Counter = ({stock , onAdd}) => {
                     <h2>{contador}</h2>
                     <button className='botonesCounter' type='button' onClick={resta}>-</button>
                 </div>
+                <Link to={'/cart'}>
                 <div className='divBoton'>
-                    <button className='botonCounter' type='button' onClick={() => { onAdd(contador) } }>Agregar al carrito</button>
+                    <button className='botonCounter' type='button' onClick={()=>onAdd(contador)}>Agregar al carrito</button>
                 </div>
+                </Link>
             </div>
         </>
     )

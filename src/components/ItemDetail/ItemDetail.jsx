@@ -1,11 +1,16 @@
+import { useState } from 'react';
 import Counter from '../Counter/Counter';
 import './ItemDetail.css';
 
-const onAdd  = (contador) => {
-  console.log('Agregaste: ' + contador + ' tortas a tu carrito')
-}
 
 const ItemDetail = ({ data }) => {
+
+  const [dato, setDato] = useState(0);
+
+  const onAdd  = (dato) => {
+    console.log('Agregaste: ' + dato + ' tortas a tu carrito')
+    setDato(dato);
+  }
 
   return (
     <div className='itemcarddetail'>
@@ -14,6 +19,7 @@ const ItemDetail = ({ data }) => {
       <p className='itemdatadetail'>{data.title}</p>
       <p className='itemdatadetail'>${data.price}</p>
       <p className='itemdatadetail'>{data.description}</p>
+      <h2>{dato}</h2>
       <Counter stock={5} onAdd={onAdd}/>
     </div>
   );
