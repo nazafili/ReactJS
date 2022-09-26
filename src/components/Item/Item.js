@@ -19,7 +19,6 @@ const Item = ({ id, name, price, image, stock }) => {
       <Link to={`/item/${id}`}>
         <button className='btn-detalle'>ver detalle</button>
       </Link>
-      <Counter stock={5} onAdd={onAdd} />
     </div>
   )
 }
