@@ -21,12 +21,10 @@ const Counter = ({stock , onAdd}) => {
                     <button className='botonesCounter' type='button' onClick={suma}>+</button>
                     <h2>{contador}</h2>
                     <button className='botonesCounter' type='button' onClick={resta}>-</button>
-                </div>
-                <Link to={'/cart'}>
+                </div>            
                 <div className='divBoton'>
                     <button className='botonCounter' type='button' onClick={()=>onAdd(contador)}>Agregar al carrito</button>
                 </div>
-                </Link>
             </div>
         </>
     )

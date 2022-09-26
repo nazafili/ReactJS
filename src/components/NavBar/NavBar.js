@@ -18,9 +18,6 @@ const NavBar = () => {
                             <NavLink className={({ isActive }) => isActive ? "clase1" : "clase2"} to="/">Inicio</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({ isActive }) => isActive ? "clase1" : "clase2"} to="/category">Categoria</NavLink>
-                        </li>
-                        <li>
                             <NavLink className={({ isActive }) => isActive ? "clase1" : "clase2"} to="/contacto">Contacto</NavLink>
                         </li>
                         <li>

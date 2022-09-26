@@ -2,6 +2,7 @@ import { useState, useContext } from 'react';
 import Counter from '../Counter/Counter';
 import './ItemDetail.css';
 import { CartContext } from '../../context/CartContext';
+import {Link} from 'react-router-dom';
 
 
 const ItemDetail = ({ data }) => {
@@ -24,11 +25,16 @@ const ItemDetail = ({ data }) => {
       <p className='itemdatadetail'>{data.description}</p>
       <h2>{dato}</h2>
       <Counter stock={5} onAdd={onAdd}/>
+      {
+        dato > 0 &&
+        <Link to='/cart'>
+        <button style={{padding: '10px', width: '10rem', marginBottom: '20px', backgroundColor: 'red', fontSize: '20px', color: 'white', border: '3px solid black'}}>Ir al carrito</button>
+        </Link>
+      }
     </div>
+
+
   );
-
-
-
 }
 
 export default ItemDetail;
