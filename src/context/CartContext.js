@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext, createContext } from "react";
 
-export const CartContext = React.createContext();
+export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [productCartList, setProductCartList] = useState([]);

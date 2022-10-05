@@ -23,9 +23,8 @@ const CartContainer = () => {
                     <div>
                         <button style={{ color: 'black', border: '3px solid black', padding: '4px', background: 'red', fontWeight: 'bold', fontSize: '18px' }} onClick={clear}>Vaciar carrito</button>
                     </div>
-                    <div>
-                        <button style={{ color: 'black', margin: '10px', border: '3px solid black', padding: '4px', background: 'green', fontWeight: 'bold', fontSize: '20px' }} >Terminar compra</button>
-                    </div>
+
+                    <Link  style={{ color: 'black', border: '3px solid black', padding: '4px', background: 'red', fontWeight: 'bold', fontSize: '18px', marginTop: '10px' }} to='/checkout'> Terminar mi compra </Link>
                 </div>
                 :
                 <>
